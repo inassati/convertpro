@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConvertPro - Volume</title>
+    <link rel="shortcut icon" type="image/x-icon" href="convert_imagesplitter.png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                ConvertPro
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Main</a>
+            <a href="speed.html">Speed</a>
+            <a href="length.html">Length</a>
+            <a href="temp.html">Temperature</a>
+            <a href="weight.html">Weight</a>
+            <a href="data.html">Data</a>
+            <a href="volume.html">Volume</a>
+            <a href="area.html">Area</a>
+            <a href="time.html">Time</a>
+        </div>
+    </div>
+
+    <div class="contentr">
+        <div>
+            <h2>Volume Converter</h2>
+        </div>
+
+        <div>
+            <p style="margin-left:8px;margin-bottom:4px;">Type a value in any of the fields to convert between volume
+                measurements:</p>
+            <div>
+                <label>Gallon US</label>
+                <input id="inputGallon" type="number" placeholder="Gallon" oninput="volumeConverter(this.id,this.value)"
+                    onchange="volumeConverter(this.id,this.value)">
+            </div>
+            <div>
+                <label>Litre</label>
+                <input id="inputLitre" type="number" placeholder="Litre" oninput="volumeConverter(this.id,this.value)"
+                    onchange="volumeConverter(this.id,this.value)">
+            </div>
+            <div>
+                <label>Millilitre</label>
+                <input id="inputMillilitre" type="number" placeholder="Millilitre" oninput="volumeConverter(this.id,this.value)"
+                    onchange="volumeConverter(this.id,this.value)">
+            </div>
+            <div>
+                <label>Cubic Metre</label>
+                <input id="inputMetre" type="number" placeholder="Metre" oninput="volumeConverter(this.id,this.value)"
+                    onchange="volumeConverter(this.id,this.value)">
+            </div>
+            <div>
+                <label>Cubic Inch</label>
+                <input id="inputInch" type="number" placeholder="Inch" oninput="volumeConverter(this.id,this.value)"
+                    onchange="volumeConverter(this.id,this.value)">
+            </div>
+            <div>
+                <label>Cubic Foot</label>
+                <input id="inputFoot" type="number" placeholder="Foot" oninput="volumeConverter(this.id,this.value)"
+                    onchange="volumeConverter(this.id,this.value)">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row1" style="background-color: #9999993f;">
+        <div class="wikitable">
+            <br>
+            <p>According to the SI system, the base unit for measuring length is the metre and volumes are thus measured in cubic metres, where:
+
+                1 m<sup>3</sup> = 1 m • 1 m • 1 m</p>
+                <img src="Annotation 2020-06-15 163018.png">
+            <br>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="contain">
+            <div class="col">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Social</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Products</h1>
+                <ul>
+                    <li>Mission</li>
+                    <li>Services</li>
+                    <li>Get in touch</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Accounts</h1>
+                <ul>
+                    <li>Social</li>
+                    <li>Get in touch</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Resources</h1>
+                <ul>
+                    <li>Webmail</li>
+                    <li>WHOIS lookup</li>
+                    <li>Site map</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Support</h1>
+                <ul>
+                    <li>Contact us</li>
+                    <li>Web chat</li>
+                    <li>Open ticket</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Social</h1>
+                <ul>
+                    <li>e-mail: 21830264@students.liu.edu.lb</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <script>
+        function volumeConverter(source, valNum) {
+            valNum = parseFloat(valNum);
+            var inputGallon = document.getElementById("inputGallon");
+            var inputLitre = document.getElementById("inputLitre");
+            var inputMillilitre = document.getElementById("inputMillilitre");
+            var inputMetre = document.getElementById("inputMetre");
+            var inputInch = document.getElementById("inputInch");
+            var inputFoot = document.getElementById("inputFoot");
+
+            if (source == "inputGallon") {
+                inputLitre.value = (valNum * 3.78540999993543).toFixed();
+                inputMillilitre.value = (valNum * 3785.41).toFixed();
+                inputMetre.value = (valNum / 264).toFixed(6);
+                inputInch.value = (valNum * 231).toFixed();
+                inputFoot.value = (valNum / 7.481).toFixed(6);
+            }
+            if (source == "inputLitre") {
+                inputGallon.value = (valNum / 3.78540999993543).toFixed(6);
+                inputMillilitre.value = (valNum * 1000).toFixed();
+                inputMetre.value = (valNum / 1000).toFixed(6);
+                inputInch.value = (valNum * 61.024).toFixed();
+                inputFoot.value = (valNum / 28.317).toFixed(6);
+            }
+            if (source == "inputMillilitre") {
+                inputGallon.value = (valNum / 3785).toFixed(6);
+                inputLitre.value = (valNum / 1000).toFixed(6);
+                inputMetre.value = (valNum / 1000000).toFixed(6);
+                inputInch.value = (valNum / 16.387).toFixed(6);
+                inputFoot.value = (valNum / 28317).toFixed(6);
+            }
+            if (source == "inputMetre") {
+                inputGallon.value = (valNum * 264).toFixed();
+                inputLitre.value = (valNum * 1000).toFixed();
+                inputMillilitre.value = (valNum * 1000000).toFixed();
+                inputInch.value = (valNum * 61024).toFixed(6);
+                inputFoot.value = (valNum * 35.315).toFixed(6);
+            }
+            if (source == "inputInch") {
+                inputGallon.value = (valNum / 231).toFixed(6);
+                inputLitre.value = (valNum / 61.024).toFixed(6);
+                inputMillilitre.value = (valNum * 16.387).toFixed();
+                inputMetre.value = (valNum / 61024).toFixed(6);
+                inputFoot.value = (valNum / 1728).toFixed(6);
+            }
+            if (source == "inputFoot") {
+                inputGallon.value = (valNum * 7.481).toFixed();
+                inputLitre.value = (valNum * 28.317).toFixed();
+                inputMillilitre.value = (valNum * 28317).toFixed();
+                inputMetre.value = (valNum / 35.315).toFixed(6);
+                inputInch.value = (valNum * 1728).toFixed();
+            }
+        }
+    </script>
+</body>
+
+</html>

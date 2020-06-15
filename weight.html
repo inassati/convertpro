@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConvertPro - Weight</title>
+    <link rel="shortcut icon" type="image/x-icon" href="convert_imagesplitter.png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                ConvertPro
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Main</a>
+            <a href="speed.html">Speed</a>
+            <a href="length.html">Length</a>
+            <a href="temp.html">Temperature</a>
+            <a href="weight.html">Weight</a>
+            <a href="data.html">Data</a>
+            <a href="volume.html">Volume</a>
+            <a href="area.html">Area</a>
+            <a href="time.html">Time</a>
+        </div>
+    </div>
+
+    <div class="contentr">
+        <div>
+            <h2>Weight Converter</h2>
+        </div>
+
+        <div style="margin:0 -16px">
+            <p style="margin-left:8px;margin-bottom:4px">Type a value in any of the fields to convert between weight
+                measurements:</p>
+            <div>
+                <label>Pounds</label>
+                <input id="inputPounds" type="number" placeholder="Pounds" oninput="weightConverter(this.id,this.value)"
+                    onchange="weightConverter(this.id,this.value)">
+            </div>
+            <div>
+                <label>Kilograms</label>
+                <input id="inputKilograms" type="number" placeholder="Kilograms"
+                    oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+            </div>
+            <div>
+                <label>Ounces</label>
+                <input id="inputOunces" type="number" placeholder="Ounces" oninput="weightConverter(this.id,this.value)"
+                    onchange="weightConverter(this.id,this.value)">
+            </div>
+            <div>
+                <label>Grams</label>
+                <input id="inputGrams" class="w3-input w3-border" type="number" placeholder="Grams"
+                    oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+            </div>
+            <div>
+                <label>Stones</label>
+                <input id="inputStones" type="number" placeholder="Stones" oninput="weightConverter(this.id,this.value)"
+                    onchange="weightConverter(this.id,this.value)">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row1" style="background-color: #9999993f;">
+        <div class="wikitable">
+            <br>
+            <p>The standard <a href="https://en.wikipedia.org/wiki/International_System_of_Units"
+                    title="International System of Units">International System of Units</a> (SI) unit of mass is the <a
+                    href="https://en.wikipedia.org/wiki/Kilogram" title="Kilogram">kilogram</a> (kg). The kilogram is 1000&#160;grams (g), first
+                defined in 1795 as one cubic decimeter of water at the <a href="https://en.wikipedia.org/wiki/Melting_point"
+                    title="Melting point">melting point</a> of ice. However, because precise measurement of a cubic
+                decimeter of water at the proper temperature and pressure was difficult, in 1889 the kilogram was
+                redefined as the mass of the <a href="https://en.wikipedia.org/wiki/International_prototype_of_the_kilogram" 
+                    title="International prototype of the kilogram">international prototype of the kilogram</a> of cast
+                iron, and thus became independent of the meter and the properties of water.
+            </p>
+            <p>However, the mass of the international prototype and its supposedly identical national copies have been
+                found to be drifting over time. It is expected that the <a
+                    href="https://en.wikipedia.org/wiki/2019_redefinition_of_SI_base_units" 
+                    title="2019 redefinition of SI base units">re-definition of the kilogram and several other units</a>
+                will occur on May 20, 2019, following a final vote by the <a href="https://en.wikipedia.org/wiki/CGPM" 
+                    title="CGPM">CGPM</a> in November 2018. The new definition will use only invariant quantities
+                of nature: the <a href="/wiki/Speed_of_light" title="Speed of light">speed of light</a>, the <a
+                    href="https://en.wikipedia.org/wiki/Caesium_standard" title="Caesium standard">caesium hyperfine frequency</a>, and the <a
+                    href="https://en.wikipedia.org/wiki/Planck_constant" title="Planck constant">Planck constant</a>.
+            </p>
+            <p>Other units are accepted for use in SI:
+            </p>
+            <ul>
+                <li>the <a href="https://en.wikipedia.org/wiki/Tonne" title="Tonne">tonne</a> (t) (or "metric ton") is equal to 1000&#160;kg.
+                </li>
+                <li>the <a href="https://en.wikipedia.org/wiki/Electronvolt_(mass)" 
+                        title="Electronvolt (mass)">electronvolt</a> (eV) is a unit of <a href="https://en.wikipedia.org/wiki/Energy"
+                        title="Energy">energy</a>, but because of the <a href="https://en.wikipedia.org/wiki/Mass%E2%80%93energy_equivalence"
+                        title="Mass–energy equivalence">mass–energy equivalence</a> it can easily be converted to a unit
+                    of mass, and is often used like one. In this context, the mass has units of eV/<i>c</i><sup>2</sup>
+                    (where <i>c</i> is the speed of light). The electronvolt and its multiples, such as the MeV
+                    (megaelectronvolt), are commonly used in <a href="https://en.wikipedia.org/wiki/Particle_physics"
+                        title="Particle physics">particle physics</a>.</li>
+                <li>the <a href="https://en.wikipedia.org/wiki/Atomic_mass_unit"  title="Atomic mass unit">atomic mass
+                        unit</a> (u) is 1/12 of the mass of a <a href="https://en.wikipedia.org/wiki/Carbon-12" title="Carbon-12">carbon-12</a>
+                    atom, approximately <span>1.66<span
+                            style="margin-left:0.25em;margin-right:0.15em;">×</span>10<sup>−27</sup>&#160;kg</span>. The atomic
+                    mass unit is convenient for expressing the masses of atoms and molecules.</li>
+            </ul>
+            <p>Outside the SI system, other units of mass include:
+            </p>
+            <ul>
+                <li>the <a href="https://en.wikipedia.org/wiki/Slug_(unit)" title="Slug (unit)">slug</a> (sl) is an <a
+                        href="https://en.wikipedia.org/wiki/Imperial_units" title="Imperial units">Imperial unit</a> of mass (about
+                    14.6&#160;kg).</li>
+                <li>the <a href="https://en.wikipedia.org/wiki/Pound_(mass)" title="Pound (mass)">pound</a> (lb) is a unit of both mass and
+                    force, used mainly in the United States (about 0.45&#160;kg or 4.5&#160;N). In scientific contexts
+                    where <a href="https://en.wikipedia.org/wiki/Pound_(force)" title="Pound (force)">pound (force)</a> and <a
+                        href="https://en.wikipedia.org/wiki/Pound_(mass)" title="Pound (mass)">pound (mass)</a> need to be distinguished, SI
+                    units are usually used instead.</li>
+                <li>the <a href="https://en.wikipedia.org/wiki/Planck_mass" title="Planck mass">Planck mass</a> (<i>m</i><sub>P</sub>) is the
+                    maximum mass of point particles (about  <span>2.18<span
+                            style="margin-left:0.25em;margin-right:0.15em;">×</span>10<sup>−8</sup>&#160;kg</span>). It
+                    is used in <a href="https://en.wikipedia.org/wiki/Particle_physics" title="Particle physics">particle physics</a>.</li>
+                <li>the <a href="https://en.wikipedia.org/wiki/Solar_mass" title="Solar mass">solar mass</a> (<var>M</var><sub>&#x2609;</sub>)
+                    is defined as the mass of the <a href="https://en.wikipedia.org/wiki/Sun" title="Sun">Sun</a>. It is primarily used in
+                    astronomy to compare large masses such as stars or galaxies (≈ <span>1.99<span
+                            style="margin-left:0.25em;margin-right:0.15em;">×</span>10<sup>30</sup>&#160;kg</span>).
+                </li>
+                <li>the mass of a very small particle may be identified by its inverse <a
+                        href="https://en.wikipedia.org/wiki/Compton_wavelength" title="Compton wavelength">Compton wavelength</a> (<span
+                        >1&#160;cm<sup>−1</sup> ≈  <span></span>3.52<span
+                                style="margin-left:0.25em;margin-right:0.15em;">×</span>10<sup>−41</sup>&#160;kg</span></span>).
+                </li>
+                <li>the mass of a very large star or <a href="https://en.wikipedia.org/wiki/Black_hole" title="Black hole">black hole</a> may be
+                    identified with its <a href="https://en.wikipedia.org/wiki/Schwarzschild_radius" title="Schwarzschild radius">Schwarzschild
+                        radius</a> ( <span>1&#160;cm ≈  <span>6.73<span
+                                style="margin-left:0.25em;margin-right:0.15em;">×</span>10<sup>24</sup>&#160;kg</span></span>).
+                </li>
+            </ul>
+            
+            <br>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="contain">
+            <div class="col">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Social</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Products</h1>
+                <ul>
+                    <li>Mission</li>
+                    <li>Services</li>
+                    <li>Get in touch</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Accounts</h1>
+                <ul>
+                    <li>Social</li>
+                    <li>Get in touch</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Resources</h1>
+                <ul>
+                    <li>Webmail</li>
+                    <li>WHOIS lookup</li>
+                    <li>Site map</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Support</h1>
+                <ul>
+                    <li>Contact us</li>
+                    <li>Web chat</li>
+                    <li>Open ticket</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Social</h1>
+                <ul>
+                    <li>e-mail: 21830264@students.liu.edu.lb</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <script>
+        function weightConverter(source, valNum) {
+            valNum = parseFloat(valNum);
+            var inputPounds = document.getElementById("inputPounds");
+            var inputKilograms = document.getElementById("inputKilograms");
+            var inputOunces = document.getElementById("inputOunces");
+            var inputGrams = document.getElementById("inputGrams");
+            var inputStones = document.getElementById("inputStones");
+            if (source == "inputPounds") {
+                inputKilograms.value = (valNum / 2.2046).toFixed(2);
+                inputOunces.value = (valNum * 16).toFixed(2);
+                inputGrams.value = (valNum / 0.0022046).toFixed();
+                inputStones.value = (valNum * 0.071429).toFixed(3);
+            }
+            if (source == "inputKilograms") {
+                inputPounds.value = (valNum * 2.2046).toFixed(2);
+                inputOunces.value = (valNum * 35.274).toFixed(2);
+                inputGrams.value = (valNum * 1000).toFixed();
+                inputStones.value = (valNum * 0.1574).toFixed(3);
+            }
+            if (source == "inputOunces") {
+                inputPounds.value = (valNum * 0.062500).toFixed(4);
+                inputKilograms.value = (valNum / 35.274).toFixed(4);
+                inputGrams.value = (valNum / 0.035274).toFixed(1);
+                inputStones.value = (valNum * 0.0044643).toFixed(4);
+            }
+            if (source == "inputGrams") {
+                inputPounds.value = (valNum * 0.0022046).toFixed(4);
+                inputKilograms.value = (valNum / 1000).toFixed(4);
+                inputOunces.value = (valNum * 0.035274).toFixed(3);
+                inputStones.value = (valNum * 0.00015747).toFixed(5);
+            }
+            if (source == "inputStones") {
+                inputPounds.value = (valNum * 14).toFixed(1);
+                inputKilograms.value = (valNum / 0.15747).toFixed(1);
+                inputOunces.value = (valNum * 224).toFixed();
+                inputGrams.value = (valNum / 0.00015747).toFixed();
+            }
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConvertPro - Area</title>
+    <link rel="shortcut icon" type="image/x-icon" href="convert_imagesplitter.png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                ConvertPro
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Main</a>
+            <a href="speed.html">Speed</a>
+            <a href="length.html">Length</a>
+            <a href="temp.html">Temperature</a>
+            <a href="weight.html">Weight</a>
+            <a href="data.html">Data</a>
+            <a href="volume.html">Volume</a>
+            <a href="area.html">Area</a>
+            <a href="time.html">Time</a>
+        </div>
+    </div>
+
+    <div class="contentr">
+        <div>
+            <h2>Area Converter</h2>
+        </div>
+
+        <div>
+            <p style="margin-left:8px;margin-bottom:4px;">Type a value in any of the fields to convert between area
+                measurements:</p>
+            <div>
+                <label>Square Kilometre</label>
+                <input id="inputKm" type="number" placeholder="Km" oninput="areaConverter(this.id,this.value)"
+                    onchange="areaConverter(this.id,this.value)">
+            </div>
+            <div>
+                <label>Square Metre</label>
+                <input id="inputM" type="number" placeholder="Metre" oninput="areaConverter(this.id,this.value)"
+                    onchange="areaConverter(this.id,this.value)">
+            </div>
+            <div>
+                <label>Square Mile</label>
+                <input id="inputMi" type="number" placeholder="Mile" oninput="areaConverter(this.id,this.value)"
+                    onchange="areaConverter(this.id,this.value)">
+            </div>
+            <div>
+                <label>Square Yard</label>
+                <input id="inputYard" type="number" placeholder="Yard" oninput="areaConverter(this.id,this.value)"
+                    onchange="areaConverter(this.id,this.value)">
+            </div>
+            <div>
+                <label>Square Inch</label>
+                <input id="inputInch" type="number" placeholder="Inch" oninput="areaConverter(this.id,this.value)"
+                    onchange="areaConverter(this.id,this.value)">
+            </div>
+            <div>
+                <label>Square Foot</label>
+                <input id="inputFoot" type="number" placeholder="Foot" oninput="areaConverter(this.id,this.value)"
+                    onchange="areaConverter(this.id,this.value)">
+            </div>
+            <div>
+                <label>Hectare</label>
+                <input id="inputHec" type="number" placeholder="Hectare" oninput="areaConverter(this.id,this.value)"
+                    onchange="areaConverter(this.id,this.value)">
+            </div>
+            <div>
+                <label>Acre</label>
+                <input id="inputAc" type="number" placeholder="Acre" oninput="areaConverter(this.id,this.value)"
+                    onchange="areaConverter(this.id,this.value)">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row1" style="background-color: #9999993f;">
+        <div class="wikitable">
+            <br>
+            <p>Every <a href="https://en.wikipedia.org/wiki/Unit_of_length" title="Unit of length">unit of length</a> has a corresponding unit
+                of area, namely the area of a square with the given side length. Thus areas can be measured in <a
+                    href="https://en.wikipedia.org/wiki/Square_metre" title="Square metre">square metres</a> (m<sup>2</sup>), square centimetres
+                (cm<sup>2</sup>), square millimetres (mm<sup>2</sup>), <a href="https://en.wikipedia.org/wiki/Square_kilometre"
+                    title="Square kilometre">square kilometres</a> (km<sup>2</sup>), <a href="https://en.wikipedia.org/wiki/Square_foot"
+                    title="Square foot">square feet</a> (ft<sup>2</sup>), <a href="https://en.wikipedia.org/wiki/Square_yard"
+                    title="Square yard">square yards</a> (yd<sup>2</sup>), <a href="https://en.wikipedia.org/wiki/Square_mile"
+                    title="Square mile">square miles</a> (mi<sup>2</sup>), and so forth. Algebraically, these units can be
+                thought of as the <a href="https://en.wikipedia.org/wiki/Square_(algebra)" title="Square (algebra)">squares</a> of the
+                corresponding length units.
+            </p>
+            <p>The SI unit of area is the square metre, which is considered an <a href="https://en.wikipedia.org/wiki/SI_derived_unit" title="SI derived unit">SI derived unit</a>.
+            <br>
+            <br>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="contain">
+            <div class="col">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Social</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Products</h1>
+                <ul>
+                    <li>Mission</li>
+                    <li>Services</li>
+                    <li>Get in touch</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Accounts</h1>
+                <ul>
+                    <li>Social</li>
+                    <li>Get in touch</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Resources</h1>
+                <ul>
+                    <li>Webmail</li>
+                    <li>WHOIS lookup</li>
+                    <li>Site map</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Support</h1>
+                <ul>
+                    <li>Contact us</li>
+                    <li>Web chat</li>
+                    <li>Open ticket</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Social</h1>
+                <ul>
+                    <li>e-mail: 21830264@students.liu.edu.lb</li>
+
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <script>
+        function areaConverter(source, valNum) {
+            valNum = parseFloat(valNum);
+            var inputKm = document.getElementById("inputKm");
+            var inputM = document.getElementById("inputM");
+            var inputMi = document.getElementById("inputMi");
+            var inputYard = document.getElementById("inputYard");
+            var inputInch = document.getElementById("inputInch");
+            var inputFoot = document.getElementById("inputFoot");
+            var inputHec = document.getElementById("inputHec");
+            var inputAc = document.getElementById("inputAc");
+            if (source == "inputKm") {
+                inputM.value = (valNum * 1000000).toFixed();
+                inputMi.value = (valNum / 2.59).toFixed(6);
+                inputYard.value = (valNum * 1195990).toFixed();
+                inputInch.value = (valNum * 1550003100).toFixed();
+                inputFoot.value = (valNum * 10763910).toFixed();
+                inputHec.value = (valNum * 100).toFixed();
+                inputAc.value = (valNum * 247).toFixed();
+            }
+            if (source == "inputM") {
+                inputKm.value = (valNum / 1000000).toFixed(6);
+                inputMi.value = (valNum / 2590000).toFixed(6);
+                inputYard.value = (valNum * 1.19599).toFixed();
+                inputInch.value = (valNum * 1550).toFixed();
+                inputFoot.value = (valNum * 10.763910).toFixed();
+                inputHec.value = (valNum / 10000).toFixed(6);
+                inputAc.value = (valNum / 4047).toFixed(8);
+            }
+            if (source == "inputMi") {
+                inputKm.value = (valNum * 2.59).toFixed();
+                inputM.value = (valNum * 2590000).toFixed();
+                inputYard.value = (valNum * 3097600).toFixed();
+                inputInch.value = (valNum * 4014489600).toFixed();
+                inputFoot.value = (valNum * 27878400).toFixed();
+                inputHec.value = (valNum * 259).toFixed();
+                inputAc.value = (valNum * 640).toFixed();
+            }
+            if (source == "inputYard") {
+                inputKm.value = (valNum / 1196000).toFixed(8);
+                inputM.value = (valNum / 1.196).toFixed(6);
+                inputMi.value = (valNum / 3098000).toFixed(8);
+                inputInch.value = (valNum * 1296).toFixed();
+                inputFoot.value = (valNum * 9).toFixed();
+                inputHec.value = (valNum / 11960).toFixed(6);
+                inputAc.value = (valNum / 4840).toFixed(6);
+            }
+            if (source == "inputInch") {
+                inputKm.value = (valNum / 1550000000).toFixed(10);
+                inputM.value = (valNum / 1550).toFixed(6);
+                inputYard.value = (valNum / 1296).toFixed(6);
+                inputMi.value = (valNum / 4014489600).toFixed(10);
+                inputFoot.value = (valNum / 144).toFixed(6);
+                inputHec.value = (valNum / 15500000).toFixed(8);
+                inputAc.value = (valNum / 6273000).toFixed(8);
+            }
+            if (source == "inputFoot") {
+                inputKm.value = (valNum / 10760000).toFixed(8);
+                inputM.value = (valNum / 10.764).toFixed(6);
+                inputYard.value = (valNum / 9).toFixed(6);
+                inputInch.value = (valNum * 144).toFixed();
+                inputMi.value = (valNum / 27878400).toFixed(8);
+                inputHec.value = (valNum / 107639).toFixed(6);
+                inputAc.value = (valNum / 43560).toFixed(6);
+            }
+            if (source == "inputHec") {
+                inputKm.value = (valNum / 100).toFixed(6);
+                inputM.value = (valNum * 10000).toFixed();
+                inputYard.value = (valNum * 11960).toFixed();
+                inputInch.value = (valNum * 15500031).toFixed();
+                inputFoot.value = (valNum * 107639).toFixed();
+                inputMi.value = (valNum / 259).toFixed(6);
+                inputAc.value = (valNum * 2.471).toFixed();
+            }
+            if (source == "inputAc") {
+                inputKm.value = (valNum / 247).toFixed(6);
+                inputM.value = (valNum * 4047).toFixed();
+                inputYard.value = (valNum * 4840).toFixed();
+                inputInch.value = (valNum * 6272640).toFixed();
+                inputFoot.value = (valNum * 43560).toFixed();
+                inputHec.value = (valNum / 2.471).toFixed(6);
+                inputMi.value = (valNum / 640).toFixed(6);
+            }
+        }
+    </script>
+</body>
+
+</html>

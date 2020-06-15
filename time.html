@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConvertPro - Time</title>
+    <link rel="shortcut icon" type="image/x-icon" href="convert_imagesplitter.png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                ConvertPro
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Main</a>
+            <a href="speed.html">Speed</a>
+            <a href="length.html">Length</a>
+            <a href="temp.html">Temperature</a>
+            <a href="weight.html">Weight</a>
+            <a href="data.html">Data</a>
+            <a href="volume.html">Volume</a>
+            <a href="area.html">Area</a>
+            <a href="time.html">Time</a>
+        </div>
+    </div>
+
+    <div class="contentr">
+        <div>
+            <h2>Time Converter</h2>
+        </div>
+
+        <div>
+            <p style="margin-left:8px;margin-bottom:4px;">Type a value in any of the fields to convert between time
+                measurements:</p>
+            <div>
+                <label>Second</label>
+                <input id="sec" type="number" placeholder="second" oninput="timeConverter(this.id,this.value)"
+                    onchange="timeConverter(this.id,this.value)">
+            </div>
+            <div>
+                <label>Minute</label>
+                <input id="min" type="number" placeholder="minute" oninput="timeConverter(this.id,this.value)"
+                    onchange="timeConverter(this.id,this.value)">
+            </div>
+            <div>
+                <label>Hour</label>
+                <input id="hour" type="number" placeholder="hour" oninput="timeConverter(this.id,this.value)"
+                    onchange="timeConverter(this.id,this.value)">
+            </div>
+            <div>
+                <label>Millisecond</label>
+                <input id="milli" type="number" placeholder="millisecond" oninput="timeConverter(this.id,this.value)"
+                    onchange="timeConverter(this.id,this.value)">
+            </div>
+            <div>
+                <label>Microsecond</label>
+                <input id="micro" type="number" placeholder="microsecond" oninput="timeConverter(this.id,this.value)"
+                    onchange="timeConverter(this.id,this.value)">
+            </div>
+            <div>
+                <label>Nanosecond</label>
+                <input id="nano" type="number" placeholder="nanosecond" oninput="timeConverter(this.id,this.value)"
+                    onchange="timeConverter(this.id,this.value)">
+            </div>
+        </div>
+    </div>
+
+<div class="contentr">
+    <hr>
+        <div>
+            <h2>Date Converter</h2>
+        </div>
+
+        <div>
+            <p style="margin-left:8px;margin-bottom:4px;">Type a value in any of the fields to convert between date
+                measurements:</p>
+            <div>
+                <label>Day</label>
+                <input id="day" type="number" placeholder="day" oninput="timeConverter(this.id,this.value)"
+                    onchange="timeConverter(this.id,this.value)">
+            </div>
+            <div>
+                <label>Week</label>
+                <input id="week" type="number" placeholder="week" oninput="timeConverter(this.id,this.value)"
+                    onchange="timeConverter(this.id,this.value)">
+            </div>
+            <div>
+                <label>Month</label>
+                <input id="month" type="number" placeholder="month" oninput="timeConverter(this.id,this.value)"
+                    onchange="timeConverter(this.id,this.value)">
+            </div>
+            <div>
+                <label>Calendar Year</label>
+                <input id="cal" type="number" placeholder="year" oninput="timeConverter(this.id,this.value)"
+                    onchange="timeConverter(this.id,this.value)">
+            </div>
+            <div>
+                <label>Decade</label>
+                <input id="decade" type="number" placeholder="decade" oninput="timeConverter(this.id,this.value)"
+                    onchange="timeConverter(this.id,this.value)">
+            </div>
+            <div>
+                <label>Century</label>
+                <input id="century" type="number" placeholder="century" oninput="timeConverter(this.id,this.value)"
+                    onchange="timeConverter(this.id,this.value)">
+            </div>
+
+        </div>
+    </div>
+    <div class="row1" style="background-color: #9999993f;">
+        <div class="wikitable">
+            <h3>Units of Time</h3>
+
+            <p>We measure time mainly with <em>seconds, minutes, hours, days, weeks, months </em>and<em> years</em>:</p>
+
+            <table class="wikitable1">
+                <tbody>
+                    <tr>
+                        <td>1000 milliseconds</td>
+                        <td>=</td>
+                        <td><strong>1 second</strong></td>
+                    </tr>
+                    <tr>
+                        <td>60 seconds</td>
+                        <td>=</td>
+                        <td><strong>1 minute</strong></td>
+                    </tr>
+                    <tr>
+                        <td>60 minutes</td>
+                        <td>=</td>
+                        <td><strong>1 hour</strong></td>
+                    </tr>
+                    <tr>
+                        <td>24 hours</td>
+                        <td>=</td>
+                        <td><strong>1 day</strong></td>
+                    </tr>
+                    <tr>
+                        <td>7 days</td>
+                        <td>=</td>
+                        <td><strong>1 week</strong></td>
+                    </tr>
+                    <tr>
+                        <td>28, 29, 30 or 31 days</td>
+                        <td>=</td>
+                        <td><strong>1 month</strong></td>
+                    </tr>
+                    <tr>
+                        <td>365 or 366 days</td>
+                        <td>=</td>
+                        <td><strong>1 year</strong></td>
+                    </tr>
+                    <tr>
+                        <td>12 months</td>
+                        <td>=</td>
+                        <td><strong>1 year</strong></td>
+                    </tr>
+                    <tr>
+                        <td>10 years</td>
+                        <td>=</td>
+                        <td><strong>1 decade</strong></td>
+                    </tr>
+                    <tr>
+                        <td>100 years</td>
+                        <td>=</td>
+                        <td><strong>1 century</strong></td>
+                    </tr>
+                    <tr>
+                        <td>1000 years</td>
+                        <td>=</td>
+                        <td><strong>1&nbsp;millennium</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+<br>
+        </div>
+
+    </div>
+
+    
+
+    <div class="footer">
+        <div class="contain">
+            <div class="col">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Social</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Products</h1>
+                <ul>
+                    <li>Mission</li>
+                    <li>Services</li>
+                    <li>Get in touch</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Accounts</h1>
+                <ul>
+                    <li>Social</li>
+                    <li>Get in touch</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Resources</h1>
+                <ul>
+                    <li>Webmail</li>
+                    <li>WHOIS lookup</li>
+                    <li>Site map</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Support</h1>
+                <ul>
+                    <li>Contact us</li>
+                    <li>Web chat</li>
+                    <li>Open ticket</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Social</h1>
+                <ul>
+                    <li>e-mail: 21830264@students.liu.edu.lb</li>
+
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <script>
+        function timeConverter(source, valNum) {
+            valNum = parseFloat(valNum);
+            var nano = document.getElementById("nano");
+            var micro = document.getElementById("micro");
+            var milli = document.getElementById("milli");
+            var sec = document.getElementById("sec");
+            var min = document.getElementById("min");
+            var hour = document.getElementById("hour");
+            var day = document.getElementById("day");
+            var week = document.getElementById("week");
+            var month = document.getElementById("month");
+            var cal = document.getElementById("cal");
+            var decade = document.getElementById("decade");
+            var century = document.getElementById("century");
+
+            if (source == "nano") {
+                micro.value = (valNum / 1000).toFixed(4);
+                milli.value = (valNum / 1000000).toFixed(6);
+                sec.value = (valNum / 1000000000).toFixed(9);
+                min.value = (valNum / 60000000000).toFixed(10);
+                hour.value = (valNum / 3600000000000).toFixed(11);
+            }
+            if (source == "micro") {
+                nano.value = (valNum * 1000).toFixed();
+                milli.value = (valNum / 1000).toFixed(3);
+                sec.value = (valNum / 1000000).toFixed(6);
+                min.value = (valNum / 60000000).toFixed(8);
+                hour.value = (valNum / 3600000000).toFixed(11);
+            }
+            if (source == "milli") {
+                nano.value = (valNum * 1000000).toFixed();
+                micro.value = (valNum * 1000).toFixed();
+                sec.value = (valNum / 1000).toFixed(3);
+                min.value = (valNum / 60000).toFixed(6);
+                hour.value = (valNum / 3600000).toFixed(8);
+            }
+            if (source == "sec") {
+                nano.value = (valNum * 1000000000).toFixed();
+                micro.value = (valNum * 1000000).toFixed();
+                milli.value = (valNum * 1000).toFixed();
+                min.value = (valNum / 60).toFixed(4);
+                hour.value = (valNum / 3600).toFixed(6);
+            }
+            if (source == "min") {
+                nano.value = (valNum * 6000000000000).toFixed();
+                micro.value = (valNum * 6000000000).toFixed();
+                milli.value = (valNum * 6000000).toFixed();
+                sec.value = (valNum * 60).toFixed();
+                hour.value = (valNum / 60).toFixed(4);
+            }
+            if (source == "hour") {
+                nano.value = (valNum * 3600000000000).toFixed();
+                micro.value = (valNum * 3600000000).toFixed();
+                milli.value = (valNum * 3600000).toFixed();
+                sec.value = (valNum * 3600).toFixed();
+                min.value = (valNum * 60).toFixed();
+            }
+            if (source == "day") {
+                week.value = (valNum / 7).toFixed(6);
+                month.value = (valNum / 30.417).toFixed(6);
+                cal.value = (valNum / 365).toFixed(8);
+                decade.value = (valNum / 3650).toFixed(8);
+                century.value = (valNum / 36500).toFixed(8);
+            }
+            if (source == "week") {
+                day.value = (valNum * 7).toFixed();
+                month.value = (valNum / 4.345).toFixed(6);
+                cal.value = (valNum / 52.143).toFixed(8);
+                decade.value = (valNum / 521).toFixed(8);
+                century.value = (valNum / 5214).toFixed(8);
+            }
+            if (source == "month") {
+                day.value = (valNum * 30.417).toFixed();
+                week.value = (valNum * 4.345).toFixed();
+                cal.value = (valNum / 12).toFixed(4);
+                decade.value = (valNum / 120).toFixed(6);
+                century.value = (valNum / 1200).toFixed(8);
+            }
+            if (source == "cal") {
+                day.value = (valNum * 365).toFixed();
+                week.value = (valNum * 52.143).toFixed();
+                month.value = (valNum * 12).toFixed();
+                decade.value = (valNum / 10).toFixed(4);
+                century.value = (valNum / 100).toFixed(4);
+            }
+            if (source == "decade") {
+                day.value = (valNum * 3650).toFixed();
+                week.value = (valNum * 521.43).toFixed();
+                month.value = (valNum * 120).toFixed();
+                cal.value = (valNum * 10).toFixed();
+                century.value = (valNum / 10).toFixed(4);
+            }
+            if (source == "century") {
+                day.value = (valNum * 36500).toFixed();
+                week.value = (valNum * 5214.3).toFixed();
+                month.value = (valNum * 1200).toFixed();
+                cal.value = (valNum * 100).toFixed();
+                decade.value = (valNum * 10).toFixed();
+            }
+        }
+    </script>
+</body>
+
+</html>

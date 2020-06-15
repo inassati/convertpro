@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConvertPro - Temperature</title>
+    <link rel="shortcut icon" type="image/x-icon" href="convert_imagesplitter.png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                ConvertPro
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Main</a>
+            <a href="speed.html">Speed</a>
+            <a href="length.html">Length</a>
+            <a href="temp.html">Temperature</a>
+            <a href="weight.html">Weight</a>
+            <a href="data.html">Data</a>
+            <a href="volume.html">Volume</a>
+            <a href="area.html">Area</a>
+            <a href="time.html">Time</a>
+        </div>
+    </div>
+
+    <div class="contentr">
+        <div>
+            <h2>Temperature Converter</h2>
+        </div>
+
+        <divstyle="margin:0 -16px">
+            <p>Type a value in any of the fields to convert between temperature
+                measurements:</p>
+            <div>
+                <label>Fahrenheit</label>
+                <input id="inputFahrenheit" type="number" min="-459.66999999999996" placeholder="Fahrenheit"
+                    oninput="temperatureConverter(this.id,this.value)"
+                    onchange="temperatureConverter(this.id,this.value)">
+            </div>
+            <div>
+                <label>Celsius</label>
+                <input id="inputCelsius" type="number" min="-273.15" placeholder="Celsius"
+                    oninput="temperatureConverter(this.id,this.value)"
+                    onchange="temperatureConverter(this.id,this.value)">
+            </div>
+            <div>
+                <label>Kelvin</label>
+                <input id="inputKelvin" type="number" min="0" placeholder="Kelvin"
+                    oninput="temperatureConverter(this.id,this.value)"
+                    onchange="temperatureConverter(this.id,this.value)">
+            </div>
+    </div>
+    </div>
+
+
+    <div class="row1" style="background-color: #9999993f;">
+        <div class="wikitable">
+            <br>
+            <p>The basic unit of temperature in the <a
+                    href="https://en.wikipedia.org/wiki/International_System_of_Units"
+                    title="International System of Units">International System of Units</a> (SI) is the <a
+                    href="https://en.wikipedia.org/wiki/Kelvin" title="Kelvin">Kelvin</a>. It has the symbol K.
+            </p>
+            <p>For everyday applications, it is often convenient to use the Celsius scale, in which
+                <span>0&#160;°C</span> corresponds very
+                closely to the <a href="https://en.wikipedia.org/wiki/Freezing_point" title="Freezing point">freezing
+                    point</a> of water and <span>100&#160;°C</span> is its <a
+                    href="https://en.wikipedia.org/wiki/Boiling_point" title="Boiling point">boiling point</a> at sea
+                level. Because liquid
+                droplets commonly exist in clouds at sub-zero temperatures, <span>0&#160;°C</span> is better defined as
+                the melting
+                point of ice. In this scale a temperature difference of 1 degree Celsius is the same as a <span
+                    style="white-space:nowrap">1<span style="margin-left:0.25em">kelvin</span></span> increment, but the
+                scale is offset by the temperature at which ice melts (<span>273.15&#160;K</span>).
+            </p>
+            <p>By international agreement, until May 2019, the Kelvin and Celsius scales were
+                defined by two fixing points: <a href="https://en.wikipedia.org/wiki/Absolute_zero"
+                    title="Absolute zero">absolute zero</a> and
+                the <a href="https://en.wikipedia.org/wiki/Triple_point" title="Triple point">triple point</a> of <a
+                    href="https://en.wikipedia.org/wiki/Vienna_Standard_Mean_Ocean_Water"
+                    title="Vienna Standard Mean Ocean Water">Vienna
+                    Standard Mean Ocean Water</a>, which is water specially prepared with a specified blend of hydrogen
+                and oxygen isotopes. Absolute zero was defined as precisely <span>0&#160;K</span> and
+                <span>−273.15&#160;°C</span>. It is the temperature at
+                which all classical translational motion of the particles comprising matter ceases and they are at
+                complete rest in the classical model. Quantum-mechanically, however, zero-point motion remains and has
+                an associated energy, the <a href="https://en.wikipedia.org/wiki/Zero-point_energy"
+                    title="Zero-point energy">zero-point
+                    energy</a>. Matter is in its <a href="https://en.wikipedia.org/wiki/Ground_state"
+                    title="Ground state">ground state</a>, and contains no <a
+                    href="https://en.wikipedia.org/wiki/Thermal_energy" title="Thermal energy">thermal energy</a>. The
+                triple point of water is
+                defined as <span>273.16&#160;K</span>
+                and <span>0.01&#160;°C</span>. This
+                definition served the following purposes: it fixed the magnitude of the kelvin as being precisely 1 part
+                in 273.16 parts of the difference between absolute zero and the triple point of water; it establishes
+                that one kelvin has precisely the same magnitude as one degree on the Celsius scale; and it established
+                the difference between the null points of these scales as being <span>273.15&#160;K</span>
+                (<span>0&#160;K</span> = <span>−273.15&#160;°C</span> and <span>273.16&#160;K</span> =
+                <span>0.01&#160;°C</span>). Since 2019,
+                there has been a new definition based on the Boltzmann constant, but the scales are scarcely
+                changed.
+            </p>
+            <p>In the United States, the Fahrenheit scale is widely used. On this scale the freezing point of water
+                corresponds to <span>32&#160;°F</span> and the boiling point to <span>212&#160;°F</span>. The Rankine
+                scale, still used in fields of chemical engineering in the US, is an absolute scale based on the
+                Fahrenheit increment.
+            </p>
+            <table class="wikitable1">
+                <caption><b>Temperature conversions</b>
+                </caption>
+                <tbody>
+                    <tr>
+                        <th width="80pt">
+                        </th>
+                        <th width="240pt">from <a href="https://en.wikipedia.org/wiki/Celsius" title="Celsius">Celsius</a>
+                        </th>
+                        <th width="240pt">to Celsius
+                        </th>
+                    </tr>
+                    <tr>
+                        <th height="30pt">Fahrenheit
+                        </th>
+                        <td>[°F]&#160;=&#160;[°C]&#160;×&#160;&#x200b; <span><sup>9</sup>&#8260;<sub>5</sub></span>&#160;+&#160;32
+                        </td>
+                        <td>[°C]&#160;=&#160;([°F]&#160;−&#160;32)&#160;×&#160;&#x200b; <span><sup>5</sup>&#8260;<sub>9</sub></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th height="30pt">Kelvin
+                        </th>
+                        <td>[K]&#160;=&#160;[°C]&#160;+&#160;273.15
+                        </td>
+                        <td>[°C]&#160;=&#160;[K]&#160;−&#160;273.15
+                        </td>
+                    </tr>
+                    <tr>
+                        <th height="30pt">Rankine
+                        </th>
+                        <td>[°R]&#160;=&#160;([°C]&#160;+&#160;273.15)&#160;×&#160;&#x200b; <span><sup>9</sup>&#8260;<sub>5</sub></span>
+                        </td>
+                        <td>[°C]&#160;=&#160;([°R]&#160;−&#160;491.67)&#160;×&#160;&#x200b; <span><sup>5</sup>&#8260;<sub>9</sub></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th height="30pt">Delisle
+                        </th>
+                        <td>[°De]&#160;=&#160;(100&#160;−&#160;[°C])&#160;×&#160;&#x200b; <span><sup>3</sup>&#8260;<sub>2</sub></span>
+                        </td>
+                        <td>[°C]&#160;=&#160;100&#160;−&#160;[°De]&#160;×&#160;&#x200b; <span><sup>2</sup>&#8260;<sub>3</sub></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th height="30pt">Newton
+                        </th>
+                        <td>[°N]&#160;=&#160;[°C]&#160;×&#160;&#x200b; <span><sup>33</sup>&#8260;<sub>100</sub></span>
+                        </td>
+                        <td>[°C]&#160;=&#160;[°N]&#160;×&#160;&#x200b; <span><sup>100</sup>&#8260;<sub>33</sub></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th height="30pt">Réaumur
+                        </th>
+                        <td>[°Ré]&#160;=&#160;[°C]&#160;×&#160;&#x200b; <span><sup>4</sup>&#8260;<sub>5</sub></span>
+                        </td>
+                        <td>[°C]&#160;=&#160;[°Ré]&#160;×&#160;&#x200b; <span><sup>5</sup>&#8260;<sub>4</sub></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th height="30pt">Rømer
+                        </th>
+                        <td>[°Rø]&#160;=&#160;[°C]&#160;×&#160;&#x200b; <span><sup>21</sup>&#8260;<sub>40</sub></span>&#160;+&#160;7.5
+                        </td>
+                        <td>[°C]&#160;=&#160;([°Rø]&#160;−&#160;7.5)&#160;×&#160;&#x200b; <span><sup>40</sup>&#8260;<sub>21</sub></span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="contain">
+            <div class="col">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Social</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Products</h1>
+                <ul>
+                    <li>Mission</li>
+                    <li>Services</li>
+                    <li>Get in touch</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Accounts</h1>
+                <ul>
+                    <li>Social</li>
+                    <li>Get in touch</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Resources</h1>
+                <ul>
+                    <li>Webmail</li>
+                    <li>WHOIS lookup</li>
+                    <li>Site map</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Support</h1>
+                <ul>
+                    <li>Contact us</li>
+                    <li>Web chat</li>
+                    <li>Open ticket</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Social</h1>
+                <ul>
+                    <li>e-mail: 21830264@students.liu.edu.lb</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <script>
+        function temperatureConverter(source, valNum) {
+            valNum = parseFloat(valNum);
+            var inputFahrenheit = document.getElementById("inputFahrenheit");
+            var inputCelsius = document.getElementById("inputCelsius");
+            var inputKelvin = document.getElementById("inputKelvin");
+            if (source == "inputFahrenheit") {
+                inputCelsius.value = ((valNum - 32) / 1.8).toFixed(2);
+                inputKelvin.value = (((valNum - 32) / 1.8) + 273.15).toFixed(2);
+            }
+            if (source == "inputCelsius") {
+                inputFahrenheit.value = ((valNum * 1.8) + 32).toFixed(2);
+                inputKelvin.value = ((valNum) + 273.15).toFixed(2);
+            }
+            if (source == "inputKelvin") {
+                inputFahrenheit.value = (((valNum - 273.15) * 1.8) + 32).toFixed(2);
+                inputCelsius.value = ((valNum) - 273.15).toFixed(2);
+            }
+        }
+    </script>
+</body>
+
+</html>
